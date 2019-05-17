@@ -1,5 +1,5 @@
-function setUpMap(): Map<string, string> {
-    const mapOfBrackets = new Map<string, string>();
+function setUpMap() {
+    const mapOfBrackets = new Map();
     mapOfBrackets.set('{', '}');
     mapOfBrackets.set('[', ']');
     mapOfBrackets.set('(', ')');
@@ -8,7 +8,7 @@ function setUpMap(): Map<string, string> {
 
 const map = setUpMap();
 
-function bracketValidator(string: string): any {
+function bracketValidator(string) {
     if (string.length === 1) {
         return false;
     };
